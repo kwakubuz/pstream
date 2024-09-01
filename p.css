@@ -1,0 +1,115 @@
+body{
+    background: #000;
+    
+}
+h3{
+    color: aliceblue;
+}
+span{
+    color: aliceblue;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top:0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px ;
+    background: #000;
+    
+}
+header a{
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: var(--bg-color);
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    color: lightblue;
+    text-decoration: none;
+}
+.Navbar{
+display:flex ;
+column-gap: 5rem;
+}
+.Navbar li{
+    position: relative;
+}
+.Navbar a{
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
+    position: relative;
+    text-decoration: none;
+}
+.Navbar a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: red;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: 0.4s all linear;
+}
+.Navbar a:hover::after ,
+.Navbar .home-active::after{
+    width: 100%;
+}
+.btn{
+    padding: 0.7rem 1.4rem;
+    background: red;
+    color: #fff;
+    font-weight: 480;
+    border-radius: 0.5rem;
+    text-decoration: none;
+}
+.btn:hover{
+    background: #fa1216;
+}
+.container {
+    width: 100%;
+    min-height: 640px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: rgba(2,3,7,0.4);
+}
+.container img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+}
+.heading{
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--main-color);
+}
+.movies-container{
+    max-width: 968px;
+    margin-right: auto;
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(180px,auto));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.box .box-img{
+    width: 100%;
+    height: 270px;
+}
+.box .box-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
